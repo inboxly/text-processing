@@ -2,6 +2,7 @@
 
 Simple text processing package for internal use in Inboxly projects.
 
+
 ## Install
 
 You can install the package via composer:
@@ -40,6 +41,7 @@ echo $result; // "Text has html, tab and newlines"
 
 More handlers will be added in the near future.
 
+
 ## Testing
 
 Run the tests with:
@@ -48,6 +50,13 @@ Run the tests with:
 composer test
 ```
 
+
+## Credits
+
+- [Sento Sango](https://github.com/sentosango)
+- [All Contributors](../../contributors)
+
+
 ## License
 
-The Inboxly is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
