@@ -50,11 +50,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
-            ],
-            "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
-            }
+                "Inboxly\\TextProcessing\\TextProcessingServiceProvider"
+            ]
         }
     }
 }
