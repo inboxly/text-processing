@@ -1,0 +1,60 @@
+{
+    "name": "inboxly/text-processing",
+    "type": "library",
+    "description": "PHP package for text processing",
+    "keywords": [
+        "inboxly",
+        "text",
+        "processing"
+    ],
+    "homepage": "https://github.com/inboxly/text-processing",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sento Sango",
+            "email": "sentosango@gmail.com",
+            "homepage": "https://github.com/sentosango",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/inboxly/text-processing/issues",
+        "source": "https://github.com/inboxly/text-processing"
+    },
+    "require": {
+        "php": "^8",
+        "ezyang/htmlpurifier": "^4.13",
+        "illuminate/container": "^8.48",
+        "illuminate/support": "^8.48"
+    },
+    "require-dev": {
+        "phpunit/php-code-coverage": "^9.2",
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Inboxly\\TextProcessing\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Inboxly\\TextProcessing\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "VendorName\\Skeleton\\SkeletonServiceProvider"
+            ],
+            "aliases": {
+                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+            }
+        }
+    }
+}
