@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Inboxly\TextProcessing;
 
+use HTMLPurifier;
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
 use Inboxly\TextProcessing\Handlers\Limit;
@@ -24,13 +25,15 @@ class TextProcessingServiceProvider extends ServiceProvider implements Deferrabl
         SanitizeHtml::class,
         Trim::class,
     ];
+
     /**
      * Register any application services.
      *
      * @return void
      */
-    public function register()
+    public function register(): void
     {
+        $this->app->singleton(HTMLPurifier::class);
         $this->app->singleton(Processor::class);
 
         foreach ($this->handlers as $handler) {
