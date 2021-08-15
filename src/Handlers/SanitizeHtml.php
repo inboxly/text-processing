@@ -30,7 +30,7 @@ final class SanitizeHtml implements Handler
         $config->set('AutoFormat.RemoveEmpty.Predicate', ['iframe' => ['src']]);
         $config->set('CSS.AllowedProperties', []);
         $config->set('Filter.YouTube', true);
-        $config->set('HTML.Allowed', 'p,b,a[href],img[src],i');
+        $config->set('HTML.Allowed', 'p,b,a[href],img[src|alt],i');
         $config->set('HTML.SafeIframe', true);
         $config->set('HTML.TargetBlank', true);
         $config->set(
